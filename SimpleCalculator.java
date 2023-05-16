@@ -60,6 +60,9 @@ public class SimpleCalculator {
 			
 		}
 		
+		// Prompt the user to exit the program.
+		System.out.println("\nPress ENTER to exit...");
+		scanner.nextLine();
 		
 		// Close scanner.
 		scanner.close();
