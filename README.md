@@ -10,7 +10,7 @@ Calculator app for command line made in java as a first project to learn it.
 - Subtraction
 - Multiplication
 - Division
-- Cross platform
+
 
 
 ## Installation
