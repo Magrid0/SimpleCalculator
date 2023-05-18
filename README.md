@@ -1,8 +1,9 @@
 
-# SimpleCalculator
+# (NotSo)Simple(Anymore)Calculator
 
 Calculator app for command line made in java as a first project to learn it.
 
+**COMING SOON**: GUI version 
 
 ## Features
 
