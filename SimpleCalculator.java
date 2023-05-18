@@ -53,37 +53,45 @@ public class SimpleCalculator {
 		
 		// Initialize scanner.
 		Scanner scanner = new Scanner(System.in);
-		
-		// Enter the first number.
-		System.out.print("Enter the first number: ");
-		GlobalVariables.a = Integer.parseInt(scanner.nextLine());
-		
-		// Enter the second number.
-		System.out.print("Enter the second number: ");
-		GlobalVariables.b = Integer.parseInt(scanner.nextLine());
-		
-		// Choose sum or subtraction.
-		System.out.println("Do you want to Sum or Subtract these two numbers?");
-		System.out.println("[1] Sum");
-		System.out.println("[2] Subtract");
-		System.out.println("[3] Multiply");
-		System.out.println("[4] Divide");
-		int choice = Integer.parseInt(scanner.nextLine());
 
-		switch (choice) {
+		boolean exit = false; // Declare exit variable.
 
-			case 1 -> Calculator.sum();
+		while (!exit) {
 
-			case 2 -> Calculator.subtraction();
+			// Enter the first number.
+			System.out.print("Enter the first number: ");
+			GlobalVariables.a = Integer.parseInt(scanner.nextLine());
 
-			case 3 -> Calculator.multiplication();
+			// Enter the second number.
+			System.out.print("Enter the second number: ");
+			GlobalVariables.b = Integer.parseInt(scanner.nextLine());
 
-			case 4 -> Calculator.division();
+			// Choose sum or subtraction.
+			System.out.println("Do you want to Sum or Subtract these two numbers?");
+			System.out.println("[1] Sum");
+			System.out.println("[2] Subtract");
+			System.out.println("[3] Multiply");
+			System.out.println("[4] Divide");
+			System.out.println("[5] Exit");
+			int choice = Integer.parseInt(scanner.nextLine());
+
+			switch (choice) {
+
+				case 1 -> Calculator.sum();
+
+				case 2 -> Calculator.subtraction();
+
+				case 3 -> Calculator.multiplication();
+
+				case 4 -> Calculator.division();
+
+				case 5 -> exit = true;
+
+				default -> System.out.println("Invalid choice");
+
+			}
+
 		}
-
-		// Prompt the user to exit the program.
-		System.out.println("\nPress ENTER to exit...");
-		scanner.nextLine();
 		
 		// Close scanner.
 		scanner.close();
