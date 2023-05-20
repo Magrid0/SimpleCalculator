@@ -3,7 +3,7 @@
 
 Calculator app for command line made in java as a first project to learn it.
 
-**COMING SOON**: GUI version 
+**COMING SOON**: [GUI version](https://github.com/Magrid0/SimpleCalculatorGUI) 
 
 ## Features
 
